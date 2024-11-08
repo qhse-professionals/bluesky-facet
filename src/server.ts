@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { detectFacets } from './facetGenerator.js';
 
@@ -12,7 +12,7 @@ interface TextRequest {
   text: string;
 }
 
-app.post('/api/facets', (req: any, res: any) => {
+app.post('/api/facets', (req: Request , res: Response) => {
   const { text } = req.body as TextRequest;
   
   if (!text) {
