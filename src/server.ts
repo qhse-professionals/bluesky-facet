@@ -3,7 +3,7 @@ import cors from 'cors';
 import { detectFacets } from './facetGenerator.js';
 
 const app = express();
-const port = 3000;
+const port = 443;
 
 app.use(cors());
 app.use(express.json());
