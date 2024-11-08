@@ -1,0 +1,33 @@
+{
+  "name": "qhse-professionals",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "tsx src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@atproto/api": "^0.13.14",
+    "express": "^4.21.1",
+    "cors": "^2.8.5",
+    "@types/cors": "^2.8.17",    
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.2",
+     "tsx": "^4.7.0"
+  },
+  "description": ""
+}
