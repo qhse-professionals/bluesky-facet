@@ -12,7 +12,7 @@ interface TextRequest {
   text: string;
 }
 
-app.post('/api/facets', (req, res) => {
+app.post('/api/facets', (req: any, res: any) => {
   const { text } = req.body as TextRequest;
   
   if (!text) {
